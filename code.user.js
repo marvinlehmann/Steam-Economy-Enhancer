@@ -3324,7 +3324,7 @@
             '</div>');
 
         $('.select_all').on('click', '*', function() {
-            $('.inventory_ctn:visible > .inventory_page:visible > .itemHolder:visible').delayedEach(250, function(i, it) {
+            $('.inventory_ctn:visible > .inventory_page:visible > .itemHolder:visible').each(function(i, it) {
                 var item = it.rgItem;
                 if (item.is_stackable)
                     return;
